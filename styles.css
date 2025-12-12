@@ -354,7 +354,7 @@ body {
 .skill-stack .stack-holder {
   background-color: #0d0f16;
   box-shadow: 2px 4px 10px rgba(0,0,0,0.5);
-  width: 400px;
+  text-align: center;
   height: 280px;
   padding: 50px 40px;
 }
@@ -396,7 +396,7 @@ body {
 .team-card-holder {
   height: 370px;
   width: 280px;
-  border: 1px dashed lightgrey;
+  border: 3px inset lightgrey;
   text-align: center;
   padding: 10px;
 }
@@ -915,6 +915,9 @@ body {
     flex-direction: column;
     text-align: center;
   }
+  .our-skills p {
+    font-size: 2.5rem;
+  }
 
   .sk-img img {
     width: 90%;
@@ -934,13 +937,20 @@ body {
   }
 
   /* TEAM */
+  .team-p {
+    font-size: 2.5rem;
+    margin-top: 10px;
+  }
   .team-cards {
     flex-direction: column;
     align-items: center;
     gap: 30px;
     margin-top: 20px;
   }
-  
+  .team-card-holder {
+    width: 90%;
+    height: auto;
+  }
   .team-card-holder img {
     width: 85%;
     margin: auto;
@@ -953,12 +963,24 @@ body {
   }
 
   /* TESTIMONIALS */
+  .testi-holder .testi-p {
+    font-size: 2.5rem;
+    margin-top: 10px;
+  }
   .testimonial-card {
     width: 92%;
     margin: auto;
+    padding: 30px 15px;
+    height: auto;
   }
 
   /* COUNTER */
+  .counter-span {
+    font-family: "Titilum";
+  }
+  .counter-container .counter-p {
+    font-size: 2.5rem;
+  }
   .counter-images {
     flex-direction: column;
     gap: 30px;
@@ -981,27 +1003,60 @@ body {
   }
 
   .form-container {
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
-
+  .form-container h2 {
+    font-size: 2.2rem;
+  }
+  .form-container input {
+    padding: 20px;
+    width: 100%;
+  }
+  .form-container textarea {
+    padding: 30px;
+    width: 100%;
+  }
+  .form-container button {
+    margin-left: 0;
+    width: 100%;
+    padding: 15px;
+  }
   .write-up {
     text-align: center;
-    width: 90%;
+    width: 95%;
     margin: auto;
+  }
+  .write-up .write-up-p {
+    font-size: 2.5rem;
+  }
+  .write-up span {
+    font-size: 1.2rem;
   }
 
   .project-box {
-    grid-template-columns: 1fr;
+   flex: 2;
+    justify-content: center;
   }
 
   /* BLOG SECTION */
-  .blog-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 25px;
+  .blog-span span {
+    font-size: 1.4rem;
   }
-
+  .blog-span p {
+    font-size: 2.5rem;
+  }
+  .blog-cards {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+  }
+  .blog-card {
+    width: 95%;
+    height: auto;
+    margin: auto;
+  }
   .blog-card img {
     width: 100%;
   }
