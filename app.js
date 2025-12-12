@@ -19,6 +19,32 @@
 //     el: '.swiper-scrollbar',
 //   },
 // });
+
+document.querySelectorAll("img").forEach(img=>{
+  img.setAttribute("loading","lazy")
+});
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+const navLinksItems = document.querySelectorAll('.nav-links li a');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navLinks.classList.toggle('show');
+});
+navLinksItems.forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navLinks.classList.remove('show');
+  });
+});
+
+navLinks.addEventListener('click', (e) => {
+  if (e.target === navLinks) {
+    hamburger.classList.remove('active');
+    navLinks.classList.remove('show');
+  }
+});
+
 const swiper = new Swiper(".mySwiper", {
   direction: "horizontal",
   loop: true,
