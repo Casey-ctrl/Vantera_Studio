@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading Example</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #121e2d;
+    color: #fff;
+  }
+
+  h1 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+  }
+
+  .loader-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+  }
+
+  .circle {
+    width: 100%;
+    height: 100%;
+    border: 10px solid #555;
+    border-top: 10px solid lightgreen;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 3rem;
+    color: lightgreen;
+    transition: transform 0.5s ease;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .done .circle {
+    animation: none;
+    border-color: lightgreen;
+  }
+
+  .done .checkmark {
+    transform: translate(-30%, -40%) scale(1);
+  }
+</style>
+</head>
+<body>
+
+<h1>DIGITAL STRATEGY</h1>
+
+<div class="loader-container" id="loader">
+  <div class="circle"></div>
+  <div class="checkmark">✔</div>
+</div>
+
+<script>
+  // Simulate loading
+  setTimeout(() => {
+    document.getElementById('loader').classList.add('done');
+  }, 3000); // 3 seconds
+</script>
+
+</body>
+</html>
