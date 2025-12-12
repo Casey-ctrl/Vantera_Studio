@@ -1,18 +1,22 @@
 @font-face {
   font-family: "Cardo";
   src: url("Google fonts/Cardo-Regular.ttf");
+  display: block;
 }
 @font-face {
   font-family: "Titilum";
   src: url("Google fonts/TitilliumWeb-Regular.ttf");
+  display: block;
 }
 @font-face {
   font-family: "Glory";
   src: url("Google fonts/Glory-VariableFont_wght.ttf");
+  display: block;
 }
 @font-face {
   font-family: "Oswald";
   src: url("Google fonts/Oswald-VariableFont_wght.ttf");
+  display: block;
 }
 * {
   box-sizing: border-box;
