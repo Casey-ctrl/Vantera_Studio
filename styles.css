@@ -592,7 +592,7 @@ body {
   width: 90%;
   display: block;
   margin: auto;
-  font-family: Helvetica;
+  font-family: "Oswald";
   font-size: 1.2rem;
   margin-bottom: 20px;
   outline: none;
@@ -606,7 +606,7 @@ body {
   width: 90%;
   display: block;
   margin: auto;
-  font-family: Helvetica;
+  font-family: "Oswald";
   font-size: 1.2rem;
   margin-bottom: 20px;
   outline: none;
@@ -903,9 +903,9 @@ body {
     height: 100vh;
   }
   /* HERO SECTION */
-  /* .hero-bg {
- 
-  } */
+  .hero-bg {
+    background-attachment: scroll;
+  }
 
   .stack .list {
     font-size: 0.9rem;
