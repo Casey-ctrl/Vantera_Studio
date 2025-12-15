@@ -401,7 +401,8 @@ body {
 .team-card-holder {
   height: 370px;
   width: 280px;
-  border: 3px inset lightgrey;
+  border: 3px inset #0a0d16;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   text-align: center;
   padding: 10px;
 }
@@ -898,7 +899,6 @@ body {
    .nav-links.show {
     display: flex;
     flex-direction: column;
-
     width: 100vw;
     height: 100vh;
   }
@@ -1165,5 +1165,41 @@ body {
 
   .contact-list {
     align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+/* NAVBAR */
+  .main-nav {
+    padding: 10px 20px;
+  }
+  .nav-links {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0; /* initially hidden */
+  height: 0;
+  background-color: rgba(0,0,0,0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  z-index: 9;
+}
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .hamburger {
+    display: flex;
+    z-index: 1000;
+  }
+   .nav-links.show {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
   }
 }
