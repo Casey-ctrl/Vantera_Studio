@@ -903,7 +903,7 @@ body {
   }
   /* HERO SECTION */
   .hero-bg {
-    background-attachment: none;
+    background-attachment: scroll;
     overflow-x: hidden;
   }
 
@@ -1171,7 +1171,8 @@ body {
 @media (max-width: 500px) {
 /* NAVBAR */
   .hero-bg {
-    background-attachment: none;
+    background-attachment: scroll;
+    overflow-x: hidden;
   }
   .main-nav {
     padding: 10px 20px;
