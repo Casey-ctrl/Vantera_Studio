@@ -48,6 +48,7 @@ body {
   width: 100%;
   top: 0;
   z-index: 1000;
+  overflow-x: hidden;
 }
 
 .logo img {
@@ -863,21 +864,19 @@ body {
   color: #94a3b8;
 }
 
-/* ============================
-   MOBILE STYLES 
-   For screens 480px and below
-   ============================ */
+/* MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
 
   /* NAVBAR */
   .main-nav {
     padding: 10px 20px;
+    overflow-x: hidden;
   }
   .nav-links {
   position: fixed;
   top: 0;
   right: 0;
-  width: 0; /* initially hidden */
+  width: 0;
   height: 0;
   background-color: rgba(0,0,0,0.95);
   display: flex;
@@ -905,6 +904,7 @@ body {
   /* HERO SECTION */
   .hero-bg {
     background-attachment: scroll;
+    overflow-x: hidden;
   }
 
   .stack .list {
@@ -1172,6 +1172,7 @@ body {
 /* NAVBAR */
   .main-nav {
     padding: 10px 20px;
+    overflow-x: hidden;
   }
   .nav-links {
   position: fixed;
