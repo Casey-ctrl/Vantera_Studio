@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Cardo";
+  src: url("Google fonts/Cardo-Regular.ttf");
+  display: block;
+}
+@font-face {
+  font-family: "Titilum";
+  src: url("Google fonts/TitilliumWeb-Regular.ttf");
+  display: block;
+}
+@font-face {
+  font-family: "Glory";
+  src: url("Google fonts/Glory-VariableFont_wght.ttf");
+  display: block;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("Google fonts/Oswald-VariableFont_wght.ttf");
+  display: block;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+}
+:root {
+  --primary-1: #FF8C00;   /* Yellowish Orange*/
+  --primary-2: #0A1D3C;   /* Navy Blue */
+  --secondary-1: #F5E9D0; 
+  --secondary-2: #4A5568;
+  --primary-font: "Glory";
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  /* margin-left: 60%; */
+  width: 190px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  list-style-type: none;
+  font-family: "Oswald";
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.2s;
+  font-size: 1.4rem;
+}
+
+.nav-links li a:hover {
+  color: var(--primary-1);
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  font-size: 1.5rem;
+
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  transition: 0.3s;
+}
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+.cart {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background: #d7002e;
+  color: #fff;
+  padding: 3px 7px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+/* HERO BG */
+.hero-bg {
+  /* position: relative;
+  height: 60vh;
+  background: url("") center/cover no-repeat; */
+  border: 2px solid white;
+
+}
