@@ -209,6 +209,7 @@ body {
   margin-left: 5%;
   outline: 12px groove var(--primary-1);
   border-radius: 4px;
+  object-fit: cover;
 }
 .design-texts .about-us {
   color: var(--primary-1);
@@ -222,29 +223,47 @@ body {
 .design-texts span {
   color: white;
   font-family: "Titilum";
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  line-height: 1.6;
 }
 
-.design-texts .business-tab1 {
-  background-color: #0d0f16;
-  box-shadow: 2px 4px 10px rgba(0,0,0,0.5);
-  padding: 25px 5px;
-  height: auto;
-  margin: auto;
-  margin-top: 10px;
-  overflow-x: hidden;
+.skills-content {
+  background: #111423;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+  margin-top: 30px;
 }
-.business-tab1 p {
-  width: 50%;
-  font-size: 1.5rem;
-  margin-top: 10px;
-  margin-left: 10px;
+
+.skill-bar {
+  margin-top: 25px;
 }
-.business-tab1 span {
-  width: 50%;
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+
 }
-.business-tab1 .missions,.missionsspan {
-  float: right;
+.skill-info span {
+  font-family: "Oswald";
+}
+
+.progress {
+  height: 8px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-1), #ffb347);
+  border-radius: 6px;
+  animation: grow 1.2s ease forwards;
+}
+@keyframes grow {
+  from { width: 0; }
 }
 /* SERVICES SECITON */
 .services {
@@ -263,7 +282,7 @@ body {
   display: inline-block;
   padding: 6px 14px;
   background: #1c1f2b;
-  color: #8b9aff;
+  color: var(--primary-1);
   border-radius: 20px;
   font-size: 0.85rem;
   letter-spacing: 1px;
@@ -277,8 +296,8 @@ body {
 }
 
 .services-header p {
-  font-size: 1rem;
-  opacity: 0.7;
+  font-size: 1.2rem;
+ 
   font-family: "Oswald";
 }
 .services-grid {
@@ -402,7 +421,7 @@ body {
 .team-card-holder {
   height: 370px;
   width: 280px;
-  border: 3px inset #0a0d16;
+  border: 3px inset var();
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   text-align: center;
   padding: 10px;
@@ -428,8 +447,8 @@ body {
 .testimonials {
   background-color: #0d0f16;
   padding: 30px 20px;
-  height: 70vh;
   margin-top: 5%;
+  height: auto;
 }
 .testi-holder .testi-span {
   color: var(--primary-1);
@@ -447,9 +466,6 @@ body {
   margin-bottom: 20px;
 }
 /* SWIPER TESTIMONIALS */
-.swiper {
-  height: 300px;
-}
 .glass {
   backdrop-filter: blur(12px);
   background: #0d0f16;
@@ -461,6 +477,7 @@ body {
   width: 75%;
   margin: auto;
   padding: 45px 25px;
+  height: 450px;
   border-radius: 20px;
   text-align: center;
   color: #fff;
@@ -471,27 +488,28 @@ body {
   transform: scale(1);
 }
 .avatar {
-  width: 90px;
-  height: 90px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin-bottom: 15px;
   border: 3px solid rgba(255, 255, 255, 0.2);
 }
 .quote {
-  font-size: 1.05rem;
+  font-size: 2rem;
   line-height: 1.6;
   margin-bottom: 12px;
   font-family: "Oswald";
 }
 .stars {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: gold;
   margin-bottom: 10px;
 }
 .name {
-  opacity: 0.8;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-top: 5px;
+  font-family: "Oswald";
 }
 .mySwiper {
   width: 100%;
@@ -717,8 +735,8 @@ body {
   background-color: white; /* dark card bg */
   border-radius: 16px;
   overflow: hidden;
-  width: 430px;
-  height: 500px;
+  width: 400px;
+  height: 460px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
