@@ -1,0 +1,160 @@
+/* FONT INITALISATION AND VARIABLE CREATION */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&family=Syne:wght@400..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Brand Colors */
+  --vantera-navy: #0a1d3c;
+  --vantera-orange: #ff8c00;
+  --vantera-cream: #f5e9d0;
+  --vantera-slate: #4a55b8;
+
+  /* Typography Colors */
+  --text-light: #f5e9d0;
+  --text-muted: #a0aec0;
+  --text-dark: #0a1d3c;
+  --font-family:  'Syne', sans-serif;
+}
+
+/* Base Body Setup */
+body {
+  background-color: var(--vantera-navy);
+  font-family: 'Inter', sans-serif; /* Your body font */
+}
+
+h1, h2, h3, .display-font {
+  font-family: 'Syne', sans-serif;
+  color: var(--text-light);
+  font-weight: 800;
+}
+/* NAVIGATION BAR */
+/* Ensure your links are ready for positioning */
+.custom-nav-link {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: "Syne", sans-serif;
+  font-size: 1.2rem;
+}
+
+/* Create the invisible line below the text */
+.custom-nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 2px;
+  left: 0;
+  background-color: var(--vantera-orange); /* Uses your vibrant orange code */
+  
+  /* Start hidden at 0 scale */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+/* Expand the line to 100% on hover */
+.custom-nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Optional: Make the text color shift to your brand cream or white on hover */
+.custom-nav-link:hover {
+  color: var(--vantera-cream) !important;
+}
+.hero-bg {
+  background-image: url(../assets/images/cinema-5069314.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background: linear-gradient(
+      180deg, 
+      rgba(10, 29, 60, 0.9) 0%, 
+      rgba(10, 29, 60, 0.9) 100%
+    ),
+}
+#typewriter {
+  border-right: 3px solid var(--vantera-orange);
+  padding-right: 4px;
+  animation: blinkCursor 0.8s step-end infinite;
+}
+
+@keyframes blinkCursor {
+  from, to { border-color: transparent }
+  50% { border-color: var(--vantera-orange); }
+}
+.btn-premium {
+  background-color: transparent;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.btn-ghost-orange {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  color: var(--vantera-orange);
+}
+.btn-ghost-orange:hover {
+  background-color: var(--vantera-orange);
+  color: var(--vantera-cream);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 140, 0, 0.50);
+}
+.btn-ghost-cream {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+}
+.btn-ghost-cream:hover {
+  border-color: var(--vantera-navy);
+  background-color: var(--vantera-navy);
+  color: var(--vantera-cream);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(245, 233, 208, 0.20);
+}
+/* Custom properties for the capability grid cards */
+.capability-card {
+  background-color: rgba(255, 255, 255, 0.03); /* Subtle matte contrast over navy */
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  color: #ffffff;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Elegant, premium hover micro-interaction */
+.capability-card:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+  border-color: var(--vantera-cream) !important; /* Soft glowing border from your orange */
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.capability-card .text-muted {
+  color: #a0aec0 !important;
+  line-height: 1.6;
+}
+/* Your Custom Style Sheet */
+.custom-process-table {
+  --bs-table-bg: #0a0f1d; /* Your custom deep navy background */
+  --bs-table-striped-bg: #111827; /* Slightly lighter shade for zebra rows */
+  border-color: var(--vantera-cream); /* Low opacity borders */
+}
+
+/* Make just the step numbers pop with your brand orange */
+.custom-process-table th {
+  color: var(--vantera-orange);
+}
+.custom-process-table td {
+  color: #fff;
+}
+.custom-footer {
+    background-color: var(--vantera-navy); /* Or whatever variable color you set up */
+    color: #ffffff;
+}
+
+/* This forces the Bootstrap secondary text links inside the footer to be readable */
+.custom-footer .text-body-secondary,
+.custom-footer .nav-link {
+    color: rgba(255, 255, 255, 0.75) !important;
+}

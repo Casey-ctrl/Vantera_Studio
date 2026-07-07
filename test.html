@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .about-skills {
+  background: #0d0f16;
+  padding: 100px 7%;
+  color: white;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+/* Shared */
+.section-tag {
+  color: var(--primary-1);
+  font-family: "Oswald";
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+/* ABOUT */
+.about-content h2 {
+  font-size: 3rem;
+  margin: 15px 0;
+  font-family: "Oswald";
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.85;
+  margin-bottom: 40px;
+  font-family: "Titilum";
+}
+
+.about-stats {
+  display: flex;
+  gap: 40px;
+}
+
+.about-stats h3 {
+  font-size: 2.3rem;
+  font-family: "Oswald";
+}
+
+.about-stats span {
+  font-size: 0.95rem;
+  opacity: 0.7;
+}
+
+/* SKILLS */
+.skills-content {
+  background: #111423;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+}
+
+.skill-bar {
+  margin-top: 25px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-family: "Oswald";
+}
+
+.progress {
+  height: 8px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-1), #ffb347);
+  border-radius: 6px;
+  animation: grow 1.2s ease forwards;
+}
+
+@keyframes grow {
+  from { width: 0; }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content h2 {
+    font-size: 2.3rem;
+  }
+
+  .about-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <section class="about-skills">
+  <div class="about-grid">
+
+    <!-- LEFT: ABOUT -->
+    <div class="about-content" data-aos="fade-right">
+      <span class="section-tag">About Vantera</span>
+      <h2>We craft visuals that elevate brands</h2>
+      <p>
+        Vantera Studio is a creative digital agency focused on high-quality video
+        editing, cinematic storytelling, and brand-driven visuals. We help
+        creators and businesses turn raw footage into polished content that
+        connects, converts, and stands out.
+      </p>
+
+      <div class="about-stats">
+        <div>
+          <h3>150+</h3>
+          <span>Projects Delivered</span>
+        </div>
+        <div>
+          <h3>100%</h3>
+          <span>Client Satisfaction</span>
+        </div>
+        <div>
+          <h3>24h</h3>
+          <span>Fast Turnaround</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: SKILLS -->
+    <div class="skills-content" data-aos="fade-left">
+      <span class="section-tag">Our Expertise</span>
+
+      <div class="skill-bar">
+        <div class="skill-info">
+          <span>Video Editing</span>
+          <span>95%</span>
+        </div>
+        <div class="progress">
+          <div class="progress-fill" style="width:95%"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-info">
+          <span>Color Grading</span>
+          <span>85%</span>
+        </div>
+        <div class="progress">
+          <div class="progress-fill" style="width:85%"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-info">
+          <span>Motion Graphics</span>
+          <span>80%</span>
+        </div>
+        <div class="progress">
+          <div class="progress-fill" style="width:80%"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-info">
+          <span>Audio Enhancement</span>
+          <span>75%</span>
+        </div>
+        <div class="progress">
+          <div class="progress-fill" style="width:75%"></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
