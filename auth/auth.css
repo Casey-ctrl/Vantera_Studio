@@ -1,21 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vantera Login</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&family=Syne:wght@400..800&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-        :root {
+ :root {
           /* Brand Colors */
           --vantera-navy: #0a1d3c;
           --vantera-orange: #ff8c00;
@@ -207,42 +190,3 @@
     
   
        
-      
-    </style>
-  </head> 
-  <body>
-    <div class="flex-wrapper">
-      <div class="studio-logo">VANTERA</div>
-
-      <div class="login-container">
-        <h1 class="login-title">Login</h1>
-
-        <form onsubmit="return false;">
-          <div class="input-group-custom">
-            <label for="email">Email Address</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="name@domain.com"
-              autocomplete="off"
-            />
-          </div>
-
-          <div class="input-group-custom">
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="••••••••" />
-          </div>
-
-          <button type="submit" class="btn-continue">Continue</button>
-        </form>
-
-        <span class="signup-prompt">
-          Don't have an account? <a href="#">Sign up</a>
-        </span>
-        <p class="back-to-home">
-           <a href="./index.html">Back To Home</a>
-        </p>
-      </div>
-    </div>
-  </body>
-</html>
