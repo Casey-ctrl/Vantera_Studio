@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vantera Login</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        :root {
+          /* Brand Colors */
+          --vantera-navy: #0a1d3c;
+          --vantera-orange: #ff8c00;
+          --vantera-cream: #f5e9d0;
+          --vantera-slate: #4a55b8;
+
+          /* Typography Colors */
+          --text-light: #f5e9d0;
+          --text-muted: #a0aec0;
+          --text-dark: #0a1d3c;
+          --font-family: "Syne", sans-serif;
+        }
+      
+
+      body {
+        background-color: var(--vantera-navy);
+        font-family: var(--font-family);
+        color: #ffffff;
+      }
+
+      .flex-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 90vh;
+        padding: 20px;
+      }
+
+      .studio-logo {
+        font-size: 1.5rem;
+        font-weight: 800;
+        letter-spacing: 4px;
+        color: var(--vantera-orange);
+        margin-bottom: 2rem;
+        text-shadow: 0 0 20px rgba(255, 87, 34, 0.2);
+      }
+
+      .login-container {
+        background-color: var(--vantera-navy);
+        /* border: 1px solid rgba(255, 255, 255, 0.08); */
+        border: 1px solid var(--vantera-orange);
+        width: 100%;
+        max-width: 420px;
+        border-radius: 16px;
+        height: 450px;
+        padding: 2.5rem;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      }
+
+      .login-title {
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        letter-spacing: -0.5px;
+        color: var(--vantera-cream);
+      }
+
+      .input-group-custom {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+      }
+
+      .input-group-custom label {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--vantera-cream);
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .input-group-custom input {
+        background-color: rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 12px 16px;
+        color: #ffffff;
+        font-size: 0.95rem;
+        transition: all 0.2s ease;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      /* High-end glow effect on input focus */
+      .input-group-custom input:focus {
+        outline: none;
+        border-color: var(--vantera-orange);
+        box-shadow: 0 0 0 3px rgba(255, 87, 34, 0.15);
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+
+      .btn-continue {
+        width: 100%;
+        background-color: var(--vantera-orange);
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        padding: 14px;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        transition:
+          transform 0.1s ease,
+          background-color 0.2s ease;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        font-family: var(--font-family);
+      }
+
+      .btn-continue:hover {
+        background-color: var(--vantera-slate);
+      }
+
+      .btn-continue:active {
+        transform: scale(0.98);
+      }
+
+      .signup-prompt {
+        display: block;
+        text-align: center;
+        font-size: 0.9rem;
+        color: var(--vantera-cream);
+      }
+
+      .signup-prompt a {
+        color: var(--vantera-orange);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s ease;
+      }
+
+      .signup-prompt a:hover {
+        color: var(--vantera-cream);
+        text-decoration: underline;
+      }
+      .back-to-home {
+        background-color: var(--vantera-cream);
+        color: black;
+        padding: 8px;
+        margin-top: 25px;
+        max-width: 120px;
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+      }
+      .back-to-home a {
+        text-decoration: none;
+        color: black;
+      }
+      @media(max-width: 992px) {
+        .back-to-home {
+            max-width: 100%;
+        }
+           /* .login-container {
+            min-width: 100%;
+            border: 2px solid var(--vantera-orange);
+            padding-left: 1.3rem;
+            padding-right: 1.3rem;
+            height: 500px;
+        } */
+      }
+      @media(max-width: 768px) {
+        .back-to-home {
+            max-width: 100%;
+        }
+        /* .login-container {
+            min-width: 100%;
+            border: 2px solid var(--vantera-orange);
+            padding-left: 1.3rem;
+            padding-right: 1.3rem;
+            height: 500px;
+        } */
+      }
+      @media(max-width: 576px) {
+        .login-container {
+            border: none;
+            min-width: 100%;
+            border: 2px solid var(--vantera-orange);
+            padding: 2.5rem 1.3rem;
+            height: 100%;
+        }
+        .back-to-home {
+            max-width: 100%;
+        }
+
+      }
+    
+  
+       
+      
+    </style>
+  </head> 
+  <body>
+    <div class="flex-wrapper">
+      <div class="studio-logo">VANTERA</div>
+
+      <div class="login-container">
+        <h1 class="login-title">Login</h1>
+
+        <form onsubmit="return false;">
+          <div class="input-group-custom">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="name@domain.com"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="input-group-custom">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="••••••••" />
+          </div>
+
+          <button type="submit" class="btn-continue">Continue</button>
+        </form>
+
+        <span class="signup-prompt">
+          Don't have an account? <a href="#">Sign up</a>
+        </span>
+        <p class="back-to-home">
+           <a href="./index.html">Back To Home</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
