@@ -29,6 +29,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css" />
+    <!-- PRELOADER -->
+     <link rel="preload" as="image" href="./assets/images/cinema-5069314.jpg">
   </head>
   <body>
     <!-- NAVIGATION BAR -->
@@ -74,7 +76,7 @@
 
         <div class="col-md-3 text-end">
           <a
-            href="./login.html"
+            href="./auth/login.html"
             class="btn rounded-pill fw-bold px-4 py-2"
             style="
               background-color: var(--vantera-orange);
@@ -228,14 +230,14 @@
         <h3 class="display-5 text-center mt-2">
           Our Impresssion & Stats Over the Years
         </h3>
-        <div class="row text-center d-flex mt-5">
-          <div class="col-3">
+        <div class="row text-center mt-5 gy-4">
+          <div class="col-6 col-md-3">
             <div class="stat-box">
               <h3 class="counter display-5 d-inline" data-target="270"></h3>
             </div>
             <p class="text-white">Views Engineered</p>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div class="stat-box" style="color: var(--vantera-orange)">
               <h3
                 class="counter display-5 d-inline"
@@ -246,14 +248,14 @@
             </div>
             <p class="text-white">Watch Time Benchmark</p>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div class="stat-box">
               <h3 class="counter display-5 d-inline" data-target="300"></h3>
               <span class="d-inline">+</span>
             </div>
             <p class="text-white">Mastered Deliverables</p>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div class="stat-box">
               <h3 class="counter display-5 d-inline" data-target="10"></h3>
               <span class="d-inline">+</span>
@@ -360,200 +362,7 @@
   </div>
 </div>
 
-   
-    <!-- <div class="container">
-      <div
-        class="process-table mt-2 border-top border-3 pt-2"
-        style="border-color: var(--vantera-orange)"
-      >
-        <div
-          class="d-flex align-items-center justify-content-between py-3 border-bottom border-secondary border-opacity-25 w-100"
-        >
-          <div class="d-flex align-items-center gap-3">
-            <div
-              class="fw-bold fs-4 px-2"
-              style="
-                min-width: 60px;
-                color: var(--vantera-orange);
-                font-family: var(--font-family);
-              "
-            >
-              01
-            </div>
-            <div
-              class="fw-bold fs-5 text-white"
-              style="min-width: 200px; font-family: var(--font-family)"
-            >
-              Intake & Briefing
-            </div>
-          </div>
 
-          <div
-            class="text-light flex-grow-1 text-break px-4 text-justify"
-            style="max-width: 600px; font-family: var(--font-family)"
-          >
-            We ingest your raw assets, audio libraries, and vision through a
-            streamlined portal. Our team maps out pacing benchmarks before a
-            single cut is made.
-          </div>
-
-          <div
-            class="fw-bold fs-6 text-white px-2 text-end"
-            style="min-width: 80px; font-family: var(--font-family)"
-          >
-            Day 0
-          </div>
-        </div>
-
-        <div
-          class="d-flex align-items-center justify-content-between py-3 border-bottom border-light border-opacity-25 w-100"
-        >
-          <div class="d-flex align-items-center gap-3">
-            <div
-              class="fw-bold fs-4 px-2"
-              style="
-                min-width: 60px;
-                color: var(--vantera-orange);
-                font-family: var(--font-family);
-              "
-            >
-              02
-            </div>
-            <div
-              class="fw-bold fs-5 text-white"
-              style="min-width: 200px; font-family: var(--font-family)"
-            >
-              Rough Cut
-            </div>
-          </div>
-
-          <div
-            class="text-light flex-grow-1 text-break px-4 text-justify"
-            style="max-width: 600px; font-family: var(--font-family)"
-          >
-            Structure and pacing locked. No color, no sound polish — just the
-            story, so big changes happen cheap.
-          </div>
-
-          <div
-            class="fw-bold fs-6 text-white px-2 text-end"
-            style="min-width: 80px; font-family: var(--font-family)"
-          >
-            Day 1-2
-          </div>
-        </div>
-        <div
-          class="d-flex align-items-center justify-content-between py-3 border-bottom border-light border-opacity-25 w-100"
-        >
-          <div class="d-flex align-items-center gap-3">
-            <div
-              class="fw-bold fs-4 px-2"
-              style="
-                min-width: 60px;
-                color: var(--vantera-orange);
-                font-family: var(--font-family);
-              "
-            >
-              03
-            </div>
-            <div
-              class="fw-bold fs-5 text-white"
-              style="min-width: 200px; font-family: var(--font-family)"
-            >
-              Review Round
-            </div>
-          </div>
-
-          <div
-            class="text-light flex-grow-1 text-break px-4"
-            style="max-width: 600px; font-family: var(--font-family)"
-          >
-            You drop timestamped notes directly on the cut. We fold in two
-            rounds of revisions as standard.
-          </div>
-
-          <div
-            class="fw-bold fs-6 text-white px-2 text-end"
-            style="min-width: 80px; font-family: var(--font-family)"
-          >
-            Day 2-3
-          </div>
-        </div>
-        <div
-          class="d-flex align-items-center justify-content-between py-3 border-bottom border-light border-opacity-25 w-100"
-        >
-          <div class="d-flex align-items-center gap-3">
-            <div
-              class="fw-bold fs-4 px-2"
-              style="
-                min-width: 60px;
-                color: var(--vantera-orange);
-                font-family: var(--font-family);
-              "
-            >
-              04
-            </div>
-            <div
-              class="fw-bold fs-5 text-white"
-              style="min-width: 200px; font-family: var(--font-family)"
-            >
-              Color, sound & graphics
-            </div>
-          </div>
-
-          <div
-            class="text-light flex-grow-1 text-break px-4 text-start"
-            style="max-width: 600px; font-family: var(--font-family)"
-          >
-            Grading, mix, titles, and motion pass over the locked edit.
-          </div>
-
-          <div
-            class="fw-bold fs-6 text-white px-2 text-end"
-            style="min-width: 80px; font-family: var(--font-family)"
-          >
-            Day 3-4
-          </div>
-        </div>
-        <div
-          class="d-flex align-items-center justify-content-between py-3 border-bottom border-light border-opacity-25 w-100"
-        >
-          <div class="d-flex align-items-center gap-3">
-            <div
-              class="fw-bold fs-4 px-2"
-              style="
-                min-width: 60px;
-                color: var(--vantera-orange);
-                font-family: var(--font-family);
-              "
-            >
-              05
-            </div>
-            <div
-              class="fw-bold fs-5 text-white"
-              style="min-width: 200px; font-family: var(--font-family)"
-            >
-              Delivery
-            </div>
-          </div>
-
-          <div
-            class="text-light flex-grow-1 text-break px-4 text-start"
-            style="max-width: 600px; font-family: var(--font-family)"
-          >
-            Final exports in every format and aspect ratio you need, plus
-            project files archived for 90 days.
-          </div>
-
-          <div
-            class="fw-bold fs-6 text-white px-2 text-end"
-            style="min-width: 80px; font-family: var(--font-family)"
-          >
-            Day 4-5
-          </div>
-        </div>
-      </div>
-    </div>  -->
     <!-- GET A QUOTE SECTION -->
     <div class="px-4 py-5 my-5 text-center">
       <img
